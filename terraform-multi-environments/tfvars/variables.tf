@@ -9,11 +9,11 @@ variable "instances" {
 }
 
 variable "zone_id" {
-    default = "Z021448929NMXW4P65UQE"
+    default = "Z08526524X8HK8MJVJQN"
 }
 
 variable "domain_name" {
-    default = "daws82s.online"
+    default = "sridevsecops.store"
 }
 
 variable "common_tags" {
