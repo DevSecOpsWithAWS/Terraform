@@ -28,16 +28,16 @@ resource "aws_instance" "terraform" {
       "sudo systemctl start nginx"
     ]
   }
-}
-data "aws_vpc" "selected" {
-  id = var.vpc_id
-}
+# }
+# data "aws_vpc" "selected" {
+#   id = var.vpc_id
+# }
 
-
+}
 resource "aws_security_group" "allow_tls" {
   name        = "allow_tls"
   description = "Allow TLS inbound traffic and all outbound traffic"
-  vpc_id      = data.aws_vpc.selected.id
+  #vpc_id      = data.aws_vpc.selected.id
 
   ingress {
     from_port   = 22
